@@ -3,7 +3,10 @@ table_node <- rvest::html_nodes(html, "table")
 versions <- as.data.frame(rvest::html_table(table_node)[[1]])
 rows_old <- as.integer(readLines("rows_old.txt"))
 old_versions <- readRDS("old_versions.rds")
+status <- "unchanged"
+cat("old: ", rows_old, " new: ", nrow(versions), "\n")
 if (rows_old < nrow(versions)) {
+cat("parsing as new rows detected\n")
     versions[,1] |> 
         gsub("([0-9])(EPSG.*$)", "\\1", x=_) |> 
         strsplit("[\\.,] ") |> 
@@ -29,11 +32,14 @@ if (rows_old < nrow(versions)) {
         tinytable::tt() |> 
         tinytable::save_tt(output="markdown") |> 
         gsub("(202[0-9]\\.[0-9][0-9][0-9])",
-            "[\\1](https://apps.epsg.org/api/v1/\\1/)", x=_) |> 
+            "[\\1](https://apps.epsg.org/api/v1/Change/\\1/)", x=_) |> 
         cat(file="whats_new.md")
     write.csv2(old_versions, file="whats_new.csv", row.names=FALSE)
     saveRDS(old_versions, file="old_versions.rds")
     saveRDS(older_versions, file="older_versions.rds")
     cat(nrow(old_versions), "\n", file="rows_old.txt")
+    status <- "updated"
+    cat(status, "\n")
 }
-q("no")
+cat(status, "\n", file="status.txt")
+
