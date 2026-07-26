@@ -2,7 +2,7 @@ html <- rvest::read_html("https://epsg.org/whatsnew.html")
 table_node <- rvest::html_nodes(html, "table")
 versions <- as.data.frame(rvest::html_table(table_node)[[1]])
 rows_old <- as.integer(readLines("rows_old.txt"))
-old_versions <- readRDS("old_versions.rda")
+old_versions <- readRDS("old_versions.rds")
 if (rows_old < nrow(versions)) {
     versions[,1] |> 
         gsub("([0-9])(EPSG.*$)", "\\1", x=_) |> 
@@ -36,4 +36,4 @@ if (rows_old < nrow(versions)) {
     saveRDS(older_versions, file="older_versions.rds")
     cat(nrow(old_versions), "\n", file="rows_old.txt")
 }
-exit("no")
+q("no")
