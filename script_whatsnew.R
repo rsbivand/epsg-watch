@@ -41,7 +41,7 @@ if (rows_old < nrow(versions)) {
         apply(1, paste, collapse=" ") |> 
         cat(sep="\n\n", file="whats_new.md")
     status <- "updated"
-    cat(status, "\n")
 }
+cat(status, "\n")
 cat(status, "\n", file="status.txt")
 
