@@ -1,3 +1,5 @@
+EPSG v13.004 2026-08-02 Change requests [2026.087](https://apps.epsg.org/api/v1/Change/2026.087/). NA Minor revision to data for Latvia. NA
+
 EPSG v13.003 2026-07-23 Change requests [2026.071](https://apps.epsg.org/api/v1/Change/2026.071/). New data for US. Minor revision to data for US. NA
 
 EPSG v13.002 2026-07-23 Change requests [2026.052](https://apps.epsg.org/api/v1/Change/2026.052/). New data for Canada. Minor revision to data for Canada. NA

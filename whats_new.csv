@@ -1,4 +1,5 @@
 "release";"date";"chReq";"newData";"minorRev";"sigRev";"newNRev";"field1";"field2"
+"EPSG v13.004";"2026-08-02";"Change requests 2026.087.";NA;"Minor revision to data for Latvia.";NA;NA;"EPSG v13.004, 2026-08-02";"Change requests<U+00A0>2026.087. - Minor revision to data for Latvia."
 "EPSG v13.003";"2026-07-23";"Change requests 2026.071.";"New data for US.";"Minor revision to data for US.";NA;NA;"EPSG v13.003, 2026-07-23";"Change requests<U+00A0>2026.071. - New data for US. - Minor revision to data for US."
 "EPSG v13.002";"2026-07-23";"Change requests 2026.052.";"New data for Canada.";"Minor revision to data for Canada.";NA;NA;"EPSG v13.002, 2026-07-23";"Change requests<U+00A0>2026.052. - New data for Canada. - Minor revision to data for Canada."
 "EPSG v13.001";"2026-07-23";"Change requests 2026.077.";NA;NA;"Significant revision to data for Austria, Belgium, Czechia, Hungary, Netherlands, Norway, Portugal, Slovakia, Spain, UK and US.";NA;"EPSG v13.001, 2026-07-23";"Change requests<U+00A0>2026.077. - Significant revision to data for Austria, Belgium, Czechia, Hungary, Netherlands, Norway, Portugal, Slovakia, Spain, UK and US."
