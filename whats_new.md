@@ -1,3 +1,5 @@
+EPSG v13.104 2026-10-05 Change requests [2026.081](https://apps.epsg.org/api/v1/Change/2026.081/) and [2026.141](https://apps.epsg.org/api/v1/Change/2026.141/). New data for Malaysia. Minor revision to data for Malaysia, Trinidad and Tobago, and US. NA
+
 EPSG v13.103 2026-09-11 Change requests [2026.075](https://apps.epsg.org/api/v1/Change/2026.075/) and [2026.138](https://apps.epsg.org/api/v1/Change/2026.138/). New data for US. NA NA
 
 EPSG v13.102 2026-08-27 Change requests [2026.088](https://apps.epsg.org/api/v1/Change/2026.088/), [2026.093](https://apps.epsg.org/api/v1/Change/2026.093/), [2026.094](https://apps.epsg.org/api/v1/Change/2026.094/), [2026.095](https://apps.epsg.org/api/v1/Change/2026.095/) and [2026.127](https://apps.epsg.org/api/v1/Change/2026.127/). New data for Belgium, Moldova, Mozambique and Portugal. Minor revision to data for Belgium, Germany, New Zealand and Norway. Significant revision to data for Moldova and Portugal.
